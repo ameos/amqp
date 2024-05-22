@@ -1,0 +1,31 @@
+{
+    "name": "ameos/amqp",
+    "description": "TYPO3 AMQP Messenger Gateway",
+    "type": "typo3-cms-extension",
+    "require": {
+        "typo3/cms-core": "^12.4 | dev-master",
+        "php": "^8.0",
+        "symfony/amqp-messenger": "^5.4"
+    },
+    "replace": {
+        "typo3-ter/amqp": "self.version"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ameos Team",
+            "email": "typo3dev@ameos.com",
+            "homepage": "http://www.ameos.com/"
+        }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "amqp"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ameos\\Amqp\\": "Classes"
+        }
+    }
+}
